@@ -1,0 +1,208 @@
+.launcherBar {
+  box-sizing: border-box;
+  display: flex;
+  height: 4.4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  padding: 0 clamp(1.2rem, 4.5vw, 4.5rem);
+  border-bottom: 1px solid hsla(31, 22%, 78%, .65);
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.launcherBrand {
+  font-family: var(--font-family-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.trigger {
+  position: static;
+  display: inline-flex;
+  width: 2.75rem;
+  min-width: 2.75rem;
+  height: 2.75rem;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  background: var(--background);
+  color: var(--foreground);
+  box-shadow: var(--shadow-md);
+}
+
+.trigger:hover {
+  background: var(--muted);
+  color: var(--foreground);
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.drawer {
+  display: flex !important;
+  flex-direction: column !important;
+  position: fixed !important;
+  inset: 0 0 0 auto !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  width: min(23rem, calc(100vw - 1.25rem)) !important;
+  max-width: min(23rem, 100vw) !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-height: 100vh !important;
+  max-height: 100dvh !important;
+  min-height: 0;
+  transform: none !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  border-radius: var(--radius-md) 0 0 var(--radius-md) !important;
+  background: var(--sidebar) !important;
+  color: var(--sidebar-foreground) !important;
+  animation: drawerEnter var(--animation-duration-normal) cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.header {
+  display: grid;
+  gap: 1.4rem;
+  flex: none;
+  margin: 0;
+  padding: 4.1rem 1.35rem 1.3rem;
+  border-bottom: 1px solid hsla(38, 45%, 91%, .16);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  width: fit-content;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: .7;
+}
+
+.brandIcon {
+  display: grid;
+  width: 2.45rem;
+  height: 2.45rem;
+  flex: none;
+  place-items: center;
+  border: 1px solid hsla(39, 45%, 88%, .3);
+  border-radius: 50%;
+  color: hsl(39, 52%, 79%);
+}
+
+.brandText strong,
+.brandText small {
+  display: block;
+}
+
+.brandText strong {
+  font-family: var(--font-family-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.brandText small {
+  margin-top: .1rem;
+  color: hsla(38, 40%, 93%, .62);
+  font-size: .7rem;
+}
+
+.title {
+  margin: 0 !important;
+  color: hsla(38, 40%, 93%, .48) !important;
+  font-family: var(--font-family-base) !important;
+  font-size: .62rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .15em;
+  line-height: 1.3 !important;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: .35rem;
+  overflow-y: auto;
+  padding: 1.15rem 1.1rem 1.2rem;
+  overscroll-behavior: contain;
+}
+
+.caption {
+  margin: 0 0 .35rem .6rem;
+  color: hsla(38, 40%, 93%, .45);
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+}
+
+.links {
+  display: grid;
+  gap: .3rem;
+}
+
+.navLink,
+.activeLink {
+  display: flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem;
+  padding: .65rem .8rem;
+  border-radius: var(--radius);
+  color: hsla(38, 40%, 93%, .82);
+  font-size: .875rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background: hsla(38, 45%, 91%, .08);
+  color: hsl(40, 45%, 98%);
+}
+
+.activeLink {
+  background: hsla(38, 45%, 91%, .1);
+  box-shadow: inset 2px 0 hsl(41, 52%, 73%);
+  color: hsl(40, 45%, 98%);
+  font-weight: 600;
+}
+
+.note {
+  margin: auto 0 0;
+  padding: 1.2rem .5rem .3rem;
+  border-top: 1px solid hsla(38, 45%, 91%, .16);
+  color: hsla(38, 40%, 96%, .86);
+  font-family: var(--font-family-display);
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+@keyframes drawerEnter {
+  from { opacity: .7; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drawer { animation: none !important; }
+}
+
+@media (max-width: 700px) {
+  .launcherBar {
+    height: 3.5rem;
+    padding: 0 1.2rem;
+  }
+}

@@ -1,0 +1,14 @@
+.page { min-height:100vh; display:flex; flex-direction:column; padding:0 5vw 1.5rem; background:radial-gradient(ellipse at 52% 0%,hsla(39,48%,88%,.55),transparent 55%),var(--background); color:var(--foreground); font-family:var(--font-family-base); }
+.header { width:min(100%,1160px); height:5rem; display:flex; align-items:center; justify-content:space-between; margin:0 auto; border-bottom:1px solid hsla(31,22%,78%,.7); }
+.brand { display:flex; align-items:center; gap:.7rem; color:var(--foreground); font-family:var(--font-family-display); font-size:1.18rem; text-decoration:none; }
+.brandIcon { width:2.25rem; height:2.25rem; display:grid; place-items:center; border:1px solid var(--border); border-radius:50%; color:var(--primary); }
+.headerNote { color:var(--muted-foreground); font-size:.58rem; font-weight:600; letter-spacing:.15em; }
+.panel { position:relative; width:min(100%,550px); margin:5.2rem auto 3.2rem; padding:2.8rem 3rem 3rem; overflow:hidden; border:1px solid var(--border); border-radius:var(--radius-lg); background:var(--card); box-shadow:var(--shadow-md); }
+.panelMark { position:absolute; top:0; left:0; width:100%; height:3px; background:linear-gradient(90deg,var(--primary),hsl(41,39%,73%),transparent 85%); }
+.eyebrow { margin:0 0 .65rem; color:var(--secondary); font-size:.59rem; font-weight:600; letter-spacing:.16em; }
+.panel h1 { margin:0; font-family:var(--font-family-display); font-size:2.6rem; font-weight:400; line-height:1.02; letter-spacing:-.035em; }
+.description { max-width:400px; margin:.9rem 0 1.8rem; color:var(--muted-foreground); font-size:.87rem; line-height:1.6; }
+.body { display:grid; gap:1rem; }
+.footer { width:min(100%,1160px); display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:auto auto 0; padding-top:1rem; border-top:1px solid hsla(31,22%,78%,.65); color:var(--muted-foreground); font-size:.62rem; }
+.footer span:first-child { font-size:.55rem; font-weight:600; letter-spacing:.14em; }
+@media(max-width:620px) { .page { padding:0 1.1rem 1.1rem; } .header { height:4.35rem; } .panel { margin:2.5rem auto; padding:2rem 1.45rem 2.2rem; } .panel h1 { font-size:2.25rem; } .footer { align-items:flex-start; flex-direction:column; gap:.4rem; } }

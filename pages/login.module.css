@@ -1,0 +1,8 @@
+.form { display:grid; gap:1.05rem; }
+.field { display:grid; gap:.4rem; color:var(--foreground); font-size:.75rem; font-weight:600; }
+.submit { width:100%; margin-top:.35rem; }
+.error { margin:0; color:var(--error); font-size:.78rem; line-height:1.45; }
+.footnote,.guestNote { margin:.6rem 0 0; color:var(--muted-foreground); font-size:.72rem; line-height:1.5; }
+.guestNote { margin-top:-.35rem; }
+.backLink { width:max-content; min-height:2.5rem; display:flex; align-items:center; margin-top:-.5rem; color:var(--primary); font-size:.74rem; font-weight:600; text-decoration:none; }
+.backLink:hover { text-decoration:underline; }

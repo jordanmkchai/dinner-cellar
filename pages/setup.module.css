@@ -1,0 +1,8 @@
+.form { display:grid; gap:1.05rem; }
+.field { display:grid; gap:.4rem; color:var(--foreground); font-size:.75rem; font-weight:600; }
+.field small { color:var(--muted-foreground); font-size:.68rem; font-weight:400; }
+.submit { width:100%; margin-top:.35rem; }
+.error { margin:0; color:var(--error); font-size:.78rem; line-height:1.45; }
+.note { margin:0; color:var(--muted-foreground); font-size:.82rem; }
+.notice { display:grid; justify-items:start; gap:.75rem; color:var(--secondary); }
+.notice p { margin:0; color:var(--muted-foreground); font-size:.82rem; line-height:1.55; }

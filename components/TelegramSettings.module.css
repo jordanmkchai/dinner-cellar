@@ -1,0 +1,233 @@
+.panel {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1.1rem;
+  border: 1px solid #dce3df;
+  border-radius: 1rem;
+  background: #fff;
+  color: #1f302a;
+}
+
+.panelHeader,
+.deliveryTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  color: #687a72;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+}
+
+.panel h2 {
+  margin: 0;
+  color: #203a30;
+  font-size: 1.15rem;
+}
+
+.explainer,
+.statusLine,
+.connected,
+.startCard p,
+.delivery p,
+.notice,
+.error {
+  margin: 0;
+  color: #5b6c64;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.textButton {
+  border: 0;
+  background: transparent;
+  color: #476c5c;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.textButton:disabled,
+.primaryButton:disabled,
+.secondaryButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.setupNote,
+.connected,
+.connectActions,
+.startCard {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  padding: 0.8rem;
+  border-radius: 0.75rem;
+  background: #f4f7f4;
+  font-size: 0.86rem;
+}
+
+.setupNote {
+  align-items: flex-start;
+  flex-direction: column;
+  color: #50635b;
+}
+
+.setupNote strong {
+  color: #364d42;
+}
+
+.stateBadge,
+.stateBadgeMuted,
+.deliveryState {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.65rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: #e7f3eb;
+  color: #2d6748;
+  font-size: 0.76rem;
+  font-weight: 750;
+}
+
+.stateBadgeMuted {
+  background: #edf0ee;
+  color: #63726b;
+}
+
+.botName {
+  color: #2f4e40;
+  font-weight: 700;
+}
+
+.connectActions {
+  justify-content: space-between;
+}
+
+.startCard {
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #e0e8e2;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  min-height: 2.45rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid #315d47;
+  border-radius: 0.65rem;
+  background: #315d47;
+  color: #fff;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondaryButton {
+  border-color: #cbd6cf;
+  background: #fff;
+  color: #315d47;
+}
+
+.notice,
+.error {
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.65rem;
+  background: #edf6ef;
+  color: #315c42;
+}
+
+.error {
+  background: #fff0ed;
+  color: #873d33;
+}
+
+.delivery {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border: 1px solid #e1e8e3;
+  border-radius: 0.8rem;
+  background: #f9fbf9;
+}
+
+.deliveryTop {
+  align-items: center;
+}
+
+.deliveryTop strong {
+  color: #30483c;
+  font-size: 0.87rem;
+}
+
+.deliveryState {
+  background: #edf0ee;
+  color: #5f7067;
+  font-size: 0.72rem;
+}
+
+.deliverySent {
+  background: #e5f2e8;
+  color: #2e6849;
+}
+
+.deliveryFailed {
+  background: #fff0ed;
+  color: #873d33;
+}
+
+.deliveryHint {
+  color: #7c5940 !important;
+}
+
+.duplicateAck {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  color: #5d4b3d;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.duplicateAck input {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  margin: 0.12rem 0 0;
+  accent-color: #315d47;
+}
+
+@media (max-width: 520px) {
+  .panel {
+    padding: 0.9rem;
+  }
+
+  .panelHeader,
+  .deliveryTop {
+    align-items: flex-start;
+  }
+
+  .textButton {
+    padding: 0.3rem 0;
+    text-align: right;
+  }
+
+  .connectActions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

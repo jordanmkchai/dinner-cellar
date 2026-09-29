@@ -1,0 +1,40 @@
+.panel { display:grid; gap:1rem; padding:1.2rem; border:1px solid var(--border); border-radius:var(--radius-md); background:var(--card); box-shadow:var(--shadow); color:var(--foreground); font-family:var(--font-family-base); }
+.heading { display:grid; gap:.45rem; }
+.eyebrow { margin:0; color:var(--secondary); font-size:.72rem; font-weight:700; letter-spacing:.14em; }
+.heading h2 { margin:0; font-family:var(--font-family-display); font-size:1.55rem; font-weight:400; }
+.heading>p:last-child { max-width:680px; margin:0; color:var(--muted-foreground); font-size:.9rem; line-height:1.5; }
+.notice,.error { margin:0; padding:.7rem .8rem; border-radius:var(--radius-sm); font-size:.875rem; line-height:1.45; }
+.notice { border:1px solid var(--border); background:var(--surface); color:var(--muted-foreground); }
+.error { border:1px solid hsla(5,58%,42%,.25); background:hsla(5,58%,42%,.04); color:var(--error); }
+.summary { display:grid; gap:.3rem; padding:.8rem .9rem; border-left:2px solid var(--secondary); background:var(--surface); }
+.summary strong { font-size:.95rem; }
+.summary span { color:var(--muted-foreground); font-size:.84rem; line-height:1.4; }
+.recipientSection,.missingSection { display:grid; gap:.45rem; padding:.85rem; border:1px solid var(--border); border-radius:var(--radius-sm); background:var(--background); }
+.recipientSection h3,.missingSection h3 { margin:0; font-size:.93rem; font-weight:700; }
+.recipientSection>p,.missingSection>p { margin:0; color:var(--muted-foreground); font-size:.82rem; line-height:1.4; }
+.recipients,.missingSection ul { display:grid; gap:.35rem; margin:0; padding:0; list-style:none; }
+.recipients li { min-height:2.5rem; display:flex; align-items:center; padding:.4rem .55rem; border:1px solid var(--border); border-radius:var(--radius-sm); background:var(--card); }
+.recipientCheck { width:1rem; height:1rem; flex:none; display:inline-block; margin-right:.55rem; border:1px solid var(--muted-foreground); border-radius:3px; background:var(--card); }
+.missingSection ul { padding-left:1.2rem; list-style:disc; color:var(--error); font-size:.84rem; line-height:1.45; }
+.imageGrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(165px,1fr)); gap:.7rem; }
+.imageCard { min-width:0; display:grid; gap:.4rem; margin:0; padding:.55rem; border:1px solid var(--border); border-radius:var(--radius-sm); background:var(--background); }
+.imageCard img { width:100%; aspect-ratio:4/3; border-radius:calc(var(--radius-sm) - 2px); background:var(--surface); object-fit:contain; }
+.imageCard figcaption { overflow:hidden; color:var(--muted-foreground); font-size:.78rem; text-overflow:ellipsis; white-space:nowrap; }
+.imageCard a { color:var(--primary); font-size:.82rem; font-weight:600; }
+.actions { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; }
+.primaryButton,.secondaryButton,.textButton { min-height:2.75rem; padding:.6rem .9rem; border-radius:var(--radius-sm); font:inherit; font-size:.875rem; font-weight:600; cursor:pointer; }
+.primaryButton { border:1px solid var(--primary); background:var(--primary); color:var(--primary-foreground); }
+.secondaryButton { border:1px solid var(--border); background:var(--card); color:var(--foreground); }
+.textButton { border:0; background:transparent; color:var(--primary); text-decoration:underline; }
+.primaryButton:hover:not(:disabled) { filter:brightness(1.08); }
+.secondaryButton:hover:not(:disabled) { background:var(--surface); }
+.primaryButton:disabled,.secondaryButton:disabled,.textButton:disabled { cursor:not-allowed; opacity:.55; }
+.helpText { margin:0; color:var(--muted-foreground); font-size:.84rem; line-height:1.45; }
+.details { border-top:1px solid var(--border); padding-top:.7rem; }
+.details summary { color:var(--primary); cursor:pointer; font-size:.875rem; font-weight:600; }
+.details pre { max-height:15rem; overflow:auto; margin:.65rem 0 0; padding:.75rem; border-radius:var(--radius-sm); background:var(--surface); color:var(--foreground); font:inherit; font-size:.84rem; line-height:1.5; white-space:pre-wrap; }
+@media(max-width:540px) {
+  .panel { padding:.9rem; }
+  .actions { display:grid; grid-template-columns:1fr; }
+  .actions button { width:100%; }
+}

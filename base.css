@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap);
+
+:root {
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+}
+
+:root {
+  --background: hsl(38, 38%, 95%);
+  --foreground: hsl(350, 22%, 16%);
+  --surface: hsl(36, 34%, 91%);
+  --surface-foreground: var(--foreground);
+  --sidebar: hsl(350, 28%, 19%);
+  --sidebar-foreground: hsl(36, 40%, 94%);
+  --card: hsl(40, 45%, 98%);
+  --card-foreground: var(--foreground);
+  --popup: hsl(40, 45%, 98%);
+  --popup-foreground: var(--foreground);
+  --primary: hsl(346, 48%, 31%);
+  --primary-foreground: hsl(40, 45%, 98%);
+  --secondary: hsl(24, 27%, 43%);
+  --secondary-foreground: hsl(40, 45%, 98%);
+  --accent: hsl(41, 39%, 73%);
+  --accent-foreground: hsl(350, 22%, 16%);
+  --muted: hsl(34, 24%, 86%);
+  --muted-foreground: hsl(25, 12%, 40%);
+  --success: hsl(145, 38%, 32%);
+  --success-foreground: hsl(40, 45%, 98%);
+  --error: hsl(2, 54%, 42%);
+  --error-foreground: hsl(40, 45%, 98%);
+  --warning: hsl(36, 60%, 42%);
+  --warning-foreground: hsl(40, 45%, 98%);
+  --info: hsl(204, 39%, 38%);
+  --info-foreground: hsl(40, 45%, 98%);
+  --info-hover: hsl(204, 39%, 33%);
+  --info-active: hsl(204, 39%, 29%);
+  --border: hsl(31, 22%, 78%);
+  --font-family-base: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-display: "Newsreader", Georgia, serif;
+  --font-family-monospace: "SFMono-Regular", Consolas, monospace;
+  --font-family-cursive: cursive;
+  --shadow: 0 1px 2px hsla(350, 22%, 16%, 0.05), 0 4px 12px hsla(350, 22%, 16%, 0.06);
+  --shadow-md: 0 2px 5px hsla(350, 22%, 16%, 0.06), 0 14px 32px -12px hsla(350, 22%, 16%, 0.14);
+  --shadow-lg: 0 4px 10px hsla(350, 22%, 16%, 0.08), 0 28px 54px -20px hsla(350, 22%, 16%, 0.2);
+  --shadow-focus: 0 0 0 3px hsla(346, 48%, 31%, 0.2);
+  --radius-sm: 0.375rem;
+  --radius: 0.625rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-full: 9999px;
+  --animation-duration-fast: 150ms;
+  --animation-duration-normal: 240ms;
+  --animation-duration-slow: 360ms;
+  --chart-color-1: hsl(346, 48%, 31%);
+  --chart-color-2: hsl(24, 27%, 43%);
+  --chart-color-3: hsl(41, 39%, 63%);
+  --chart-color-4: hsl(145, 30%, 39%);
+  --chart-color-5: hsl(204, 32%, 47%);
+}
+
+.dark {}
